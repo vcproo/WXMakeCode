@@ -1,5 +1,13 @@
+/*
+ * @Author: your name
+ * @Date: 2022-01-18 16:16:53
+ * @LastEditTime: 2022-01-18 17:22:14
+ * @LastEditors: your name
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \WXMakeCode\utils\http.js
+ */
 
-let htturl = 'http://192.165.0.31/device_jk/';//正式
+let htturl = '';//正式
 let api = (url, data, type,head,timeout=2000) =>{
   var p = new Promise((success, fail) => {
     wx.request({

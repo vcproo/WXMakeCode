@@ -1,0 +1,23 @@
+<!-- 标题栏 -->
+<view class="top" style="padding-top:{{statusBarHeight}}px">
+    <div class="top_01"><a href="#" bindtap="goback">
+            <image src="../../images/dqxz_1.png"></image>
+        </a></div>
+        <view class="top_02">项目列表</view>
+    <view class="top_03"><a href="#"></a></view>
+</view>
+<view class="empty_custom" style="padding-top:{{statusBarHeight}}px"></view>
+<!-- 内容部分 -->
+<view class="qblb" style="margin-bottom: 80px;">
+    <block wx:if="{{list.length>0}}">
+        <view class="qblb_n" wx:for="{{list}}" bindtap="{{buttonClicked?'':'linkUrl'}}" data-id="{{item.id}}">
+        <view class="qblb_n4">
+            <!-- <text>名称：</text> -->
+            <p>{{item.name}}</p>
+        </view>
+    </view>
+    </block>
+    <block wx:else>
+        暂无数据
+    </block>
+</view>

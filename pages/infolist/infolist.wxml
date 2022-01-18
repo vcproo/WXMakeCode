@@ -1,0 +1,87 @@
+<!--pages/infolist/infolist.wxml-->
+<!--头部-->
+<!-- <view class="head">
+    <view class="left" bindtap="goback">
+        <a href="javascript:;">
+            <image src="../../images/fanhui.png"></image>
+        </a>
+    </view>
+    <span>学生体检数据管理</span>
+    <view class="clear"></view>
+</view>
+<view class="index">
+  <table class="add table_mess" wx:for = "{{infolist}}" wx:for-index="key" wx:key='key' wx:for-item="data">
+        <tr>
+            <td>设备编码</td>
+            <td id="all_count">{{data.code}}</td>
+        </tr>
+        <tr>
+            <td>设备项目</td>
+            <td id="out_count">{{data.project_name}}</td>
+        </tr>
+        <tr>
+            <td>设备名称</td>
+            <td id="in_count">{{data.device_name}}</td>
+        </tr>	
+        <tr>
+            <td>设备品牌</td>
+            <td id="repair_count">{{data.brand_name}}</td>
+        </tr>		
+        <tr>
+            <td>设备型号</td>
+            <td id="repair_count">{{data.model_name}}</td>
+        </tr>	
+        <tr>
+            <td><view data-id='{{data.id}}' bindtap="location">位置流水</view></td>
+            <td><view data-id='{{data.id}}' bindtap="repair">故障流水</view></td>
+        </tr>	
+    </table>
+</view> -->
+<!-- <view class="top">
+    <view class="top_01"><a href="#" bindtap="goback"><image src="../../images/dqxz_1.png"></image></a></view>
+    <view class="top_02">库存查询</view>
+    <view class="top_03"></view>
+</view> -->
+<!-- 标题栏 -->
+<view class="top" style="padding-top:{{statusBarHeight}}px">
+    <div class="top_01"><a href="#" bindtap="goback"><image src="../../images/dqxz_1.png"></image></a></div>
+    <view class="top_02">库存查询</view>
+    <view class="top_03"><a href="#"></a></view>
+</view> 
+<view class="empty_custom" style="padding-top:{{statusBarHeight}}px"></view>
+<!-- 内容部分 -->
+<view class="qblb">
+    <view class="qblb_n" wx:for = "{{infolist}}" wx:for-index="key" wx:key='key' wx:for-item="data">
+        <view class="qblb_n4">
+            <text>设备编码：</text><p>{{data.code}}</p>
+        </view>
+        <view class="qblb_n4">
+            <text>设备项目：</text><p>{{data.project_name}}</p>
+        </view>
+        <view class="qblb_n4">
+            <text>设备名称：</text><p>{{data.device_name}}</p>
+        </view>
+        <view class="qblb_n4">
+            <text>设备品牌：</text><p>{{data.brand_name}}</p>
+        </view>
+        <view class="qblb_n4">
+            <text>设备型号：</text><p>{{data.model_name}}</p>
+        </view>
+        <view class="qblb_n4">
+            <text>货位：</text><p>{{data.cargolocation_name}}</p>
+        </view>
+        <view class="qblb_n4">
+            <text>设备备注：</text><p>{{data.remark}}</p>
+        </view>
+        <view class="qblb_n4">
+            <text> 归属人：</text><p>{{data.receive_name}}</p>
+        </view>
+        <!-- <view class="qblb_n1">
+            <p>设备编码</p><p>设备项目</p><p>设备名称</p><p>设备品牌</p><p>设备型号</p>
+        </view>
+        <view class="qblb_n2">
+            <p>{{data.code}}</p><p>{{data.project_name}}</p><p>{{data.device_name}}</p><p>{{data.brand_name}}</p><p>{{data.model_name}}</p>
+        </view> -->
+        <view class="qblb_n3"><a href="#" data-id='{{data.id}}' bindtap="location">位置流水</a><a href="#" style="background: #f1b72d;" data-id='{{data.id}}' bindtap="repair">故障流水</a></view>
+    </view>
+</view>

@@ -1,0 +1,39 @@
+/**index.wxss**/
+
+/*-- 登录 --*/
+.login{float: left; width: 100%;}
+.login_logo{float: left; width: 100%; text-align: center; margin: 10vh 0 30% 0;}
+.login_logo image{ width:70%;height:6%;position: absolute;left: 16%;top:20vh;}
+.login_main{float: left; width: 90%; padding: 0 5%; margin-top: 20%;}
+.login_main_li{float: left; width: 92%; border-bottom: 1px solid #67d4b5; padding: 0 4% 15px; margin-top: 20px;}
+.login_main_li image{float: left; width: 20px; height: 23px; margin-right: 3%;}
+.login_main_li input{float: left; width: 89%; color: #FFF; font-family: "微软雅黑"; font-size: 14px; height: 28px; line-height: 28px; background: none; outline: none;}
+.login_tj{float: left; width:100%; margin-top: 30px;}
+.btn_denglu{ color: #007a6b; line-height: 40px; font-family: "微软雅黑"; font-size: 16px;
+background:#cff2eb;text-align: center;width:330px;}
+.beijing{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index:-999;
+  height: 100vh;
+  width: 100vw;
+}
+button,view, image{border:medium none;margin:0;padding:0;font-family: "微软雅黑";}
+			ul, ol, li{list-style:none}
+.login{float: left; width: 100%;}
+			.login1{float: left; width: 100%;}
+			.login1 image{float: left; width: 100%;}
+			.login2{float: left; width: 80%; padding: 0 10%; margin-top: 5%;}
+			.login2a{float: left; width: 100%; font-size: 33px; font-weight: bold; color: #35bffe;}
+			.login2b{float: left; width: 100%; font-size: 26px; font-weight: bold; color: #35bffe; margin-top: 6px; margin-bottom: 10px;}
+			.login3{float: left; width: 100%; border-radius: 8px; border: 1px solid #dbdbdb; margin-top: 15px;height:50px;}
+			.login3 input{float: left; width: 84%; border-radius: 8px; line-height: 50px; height:50px; font-family: "微软雅黑"; font-size: 15px; padding-left: 3%; color: #9b9b9b; outline: none;}
+			.login3 image{float: right; width: 22px; height:27px; margin-top: 8px; margin-right: 10px;}
+			.login4{float: left; width: 100%; margin-top: 25px; margin-bottom: 20px;}
+			.login4 button{float: left; font-size: 17px; border-radius: 8px; text-align: center; background: #35bffe; color: #ffffff; outline: none;}
+			@media screen and (max-device-width: 320px){
+			.login1 image{ height: 150px;}
+			.login2a{ font-size: 28px !important;}
+			.login2b{font-size: 23px !important;}
+			}

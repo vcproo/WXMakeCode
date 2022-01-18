@@ -1,0 +1,17 @@
+<!-- 标题栏 -->
+<view class="top" style="padding-top:{{statusBarHeight}}px">
+    <div class="top_01"><a href="#" bindtap="goback">
+            <image src="../../images/dqxz_1.png"></image>
+        </a></div>
+    <view class="top_02">生成二维码</view>
+    <view class="top_03"><a href="#"></a></view>
+</view>
+<view class="empty_custom" style="padding-top:{{statusBarHeight}}px"></view>
+<!-- 内容部分-->
+<view class="qblb" style="margin-bottom: 80px;">
+    <view style="width:{{code_w}}px;height:{{code_w}}px;margin:100px auto;">
+        <canvas class='canvas' style="width:{{code_w}}px; height:{{code_w}}px;" canvas-id='canvas'></canvas>
+    </view>
+    
+    <view class="qblb_n3" bindtap="{{buttonClicked?'':'save'}}"><a href="#">保存到相册</a></view>
+</view>

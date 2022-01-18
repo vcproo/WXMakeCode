@@ -1,0 +1,20 @@
+
+<!-- 标题栏 -->
+<view class="top" style="padding-top:{{statusBarHeight}}px">
+    <div class="top_01"><a href="#"></a></div>
+    <view class="top_02">设备管理</view>
+    <view class="top_03"><a href="#"></a></view>
+</view> 
+<view class="empty_custom" style="padding-top:{{statusBarHeight}}px"></view>
+<!-- 内容部分 -->
+<view class="grzx">
+    
+    <view class="grzx_n">
+        <view class="grzx_n1" bindtap="{{buttonClicked?'':'code'}}"><a href="#">
+                    <view class="grzx_n1a">生成二维码<text>\n</text>
+                    </view>
+            </a>
+        </view>
+    </view>
+   
+</view>

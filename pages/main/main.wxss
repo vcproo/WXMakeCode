@@ -1,0 +1,18 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, image{border:medium none;margin:0;padding:0;font-family: "微软雅黑";}
+		ul, ol, li{list-style:none}
+		a,a:hover{text-decoration:none;}
+@media screen and (max-device-width: 320px){
+	.grzx_n1{ padding: 6px 0 !important;}
+	.grzx_n1a{  font-size:16px !important; margin-top: 18px !important;}
+	.grzx_n1a p{font-size: 12px !important;}
+}
+.empty_custom{height: 45px; width: 100%;}
+.grzx{float: left; width: 100%; padding: 0 0%; margin-top: 10px;}
+.grzx_n{float: left; width: 47%; margin-top: 3%; margin-left: 2%;}
+.grzx_n1{float: left; width: 100%; border-radius: 8px; border: 1px solid #c7c7c7; padding: 15px 0;}
+.grzx_n1 image{float: left; width: 38px; height: 38px; margin: 10px 8%;}
+.grzx_n1a{float: left; font-size:22px; color: #000000; margin-top: 15px;}
+.grzx_n1 a{float: left; width: 100%; color: #000000;}
+.grzx_n1a p{float: left; width: 100%; font-size: 12px; text-transform: uppercase; margin-top: 3px; color: #555555; overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.grzx_n2{float: left; width: 100%; border-radius: 8px; border: 1px solid #c7c7c7; text-align: center; font-size:15px; color: #555555;}
+.grzx_n2 a{float: left; width: 100%;  text-align: center; padding: 14px 0;}
